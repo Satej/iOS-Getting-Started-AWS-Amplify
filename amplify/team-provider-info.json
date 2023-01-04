@@ -10,6 +10,11 @@
       "StackName": "amplify-iosgettingstarted-dev-171127",
       "StackId": "arn:aws:cloudformation:ap-south-1:154815786250:stack/amplify-iosgettingstarted-dev-171127/ba4d41d0-8c24-11ed-afb0-020f6ebe10a0",
       "AmplifyAppId": "d3q2vrotll40bs"
+    },
+    "categories": {
+      "auth": {
+        "iosgettingstarteddac810ab": {}
+      }
     }
   }
 }
