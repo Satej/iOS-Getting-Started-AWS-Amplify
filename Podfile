@@ -10,5 +10,6 @@ target 'iOS Getting Started' do
   pod 'Amplify/Tools', '~> 1.0'       # allows to call amplify CLI from within Xcode
 
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin', '~> 1.0' # support for Cognito user authentication
+  pod 'AmplifyPlugins/AWSAPIPlugin', '~> 1.0'         # support for GraphQL API
 
 end

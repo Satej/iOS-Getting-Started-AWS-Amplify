@@ -3,6 +3,10 @@ PODS:
     - Amplify/Default (= 1.28.4)
   - Amplify/Default (1.28.4)
   - Amplify/Tools (1.28.4)
+  - AmplifyPlugins/AWSAPIPlugin (1.28.4):
+    - AppSyncRealTimeClient (~> 2.0)
+    - AWSCore (~> 2.29.1)
+    - AWSPluginsCore (= 1.28.4)
   - AmplifyPlugins/AWSCognitoAuthPlugin (1.28.4):
     - AWSAuthCore (~> 2.29.1)
     - AWSCognitoIdentityProvider (~> 2.29.1)
@@ -10,6 +14,8 @@ PODS:
     - AWSCore (~> 2.29.1)
     - AWSMobileClient (~> 2.29.1)
     - AWSPluginsCore (= 1.28.4)
+  - AppSyncRealTimeClient (2.1.1):
+    - Starscream (~> 4.0.4)
   - AWSAuthCore (2.29.1):
     - AWSCore (= 2.29.1)
   - AWSCognitoIdentityProvider (2.29.1):
@@ -26,33 +32,39 @@ PODS:
   - AWSPluginsCore (1.28.4):
     - Amplify (= 1.28.4)
     - AWSCore (~> 2.29.1)
+  - Starscream (4.0.4)
 
 DEPENDENCIES:
   - Amplify (~> 1.0)
   - Amplify/Tools (~> 1.0)
+  - AmplifyPlugins/AWSAPIPlugin (~> 1.0)
   - AmplifyPlugins/AWSCognitoAuthPlugin (~> 1.0)
 
 SPEC REPOS:
   trunk:
     - Amplify
     - AmplifyPlugins
+    - AppSyncRealTimeClient
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
+    - Starscream
 
 SPEC CHECKSUMS:
   Amplify: be704bdc5c808a61b1a9a0ee79ba4892de9c5dcc
   AmplifyPlugins: f90215cd830f0edb354629661978bbe8a6bee5c0
+  AppSyncRealTimeClient: 937360221f2b664c4c33ae142a60643e64f480cd
   AWSAuthCore: 47c24a59f47501358803c58045b03e0fe10f451e
   AWSCognitoIdentityProvider: ecd914518152f6d645485b9431265eedf2ff84d0
   AWSCognitoIdentityProviderASF: c845b376143e69b1f34899f0572654cf816f9c5e
   AWSCore: aa4a494c8bbcefe97723621fa51cfb1fad15fbd1
   AWSMobileClient: 1c98e24ad0afcbed09febdeda4ad59fd7e7a5feb
   AWSPluginsCore: 188e0c9fb78f87f517240f33589cbc3fbaedcdb9
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 060eca1f5ba9e25b2391c4ca70b1f22f1e86d959
+PODFILE CHECKSUM: 5ac2358a5f363413c2ccd19ba1d3c31c73fc6687
 
 COCOAPODS: 1.11.3

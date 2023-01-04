@@ -184,6 +184,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AWSPluginsCore/AWSPluginsCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Amplify/Amplify.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AmplifyPlugins/AmplifyPlugins.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppSyncRealTimeClient/AppSyncRealTimeClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework"
@@ -194,6 +196,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AWSPluginsCore/AWSPluginsCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Amplify/Amplify.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AmplifyPlugins/AmplifyPlugins.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppSyncRealTimeClient/AppSyncRealTimeClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
