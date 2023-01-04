@@ -12,6 +12,10 @@
 		C47A92872965969800A0BDDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A92862965969800A0BDDF /* ContentView.swift */; };
 		C47A92892965969900A0BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A92882965969900A0BDDF /* Assets.xcassets */; };
 		C47A928C2965969900A0BDDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A928B2965969900A0BDDF /* Preview Assets.xcassets */; };
+		C4D8ED752965A0ED00762AC7 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8ED732965A0ED00762AC7 /* awsconfiguration.json */; };
+		C4D8ED762965A0ED00762AC7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8ED742965A0ED00762AC7 /* amplifyconfiguration.json */; };
+		C4D8ED782965A12B00762AC7 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8ED772965A12B00762AC7 /* Backend.swift */; };
+		C4D8ED7A2965A1CE00762AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8ED792965A1CE00762AC7 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C47A92862965969800A0BDDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C47A92882965969900A0BDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47A928B2965969900A0BDDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4D8ED732965A0ED00762AC7 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		C4D8ED742965A0ED00762AC7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		C4D8ED772965A12B00762AC7 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		C4D8ED792965A1CE00762AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D969E105E1C4BEA5105B87FC /* Pods_iOS_Getting_Started.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Getting_Started.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,7 +51,6 @@
 				8194027FF5257FB2C9EB82B8 /* Pods-iOS Getting Started.debug.xcconfig */,
 				83F06A12AD810B76B2F14959 /* Pods-iOS Getting Started.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,9 @@
 		C47A92782965969800A0BDDF = {
 			isa = PBXGroup;
 			children = (
+				C4D8ED742965A0ED00762AC7 /* amplifyconfiguration.json */,
+				C4D8ED772965A12B00762AC7 /* Backend.swift */,
+				C4D8ED732965A0ED00762AC7 /* awsconfiguration.json */,
 				C47A92832965969800A0BDDF /* iOS Getting Started */,
 				C47A92822965969800A0BDDF /* Products */,
 				18C7AE4907BF4A7201B30197 /* Pods */,
@@ -80,6 +90,7 @@
 				C47A92862965969800A0BDDF /* ContentView.swift */,
 				C47A92882965969900A0BDDF /* Assets.xcassets */,
 				C47A928A2965969900A0BDDF /* Preview Content */,
+				C4D8ED792965A1CE00762AC7 /* AppDelegate.swift */,
 			);
 			path = "iOS Getting Started";
 			sourceTree = "<group>";
@@ -154,6 +165,8 @@
 			files = (
 				C47A928C2965969900A0BDDF /* Preview Assets.xcassets in Resources */,
 				C47A92892965969900A0BDDF /* Assets.xcassets in Resources */,
+				C4D8ED752965A0ED00762AC7 /* awsconfiguration.json in Resources */,
+				C4D8ED762965A0ED00762AC7 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D8ED7A2965A1CE00762AC7 /* AppDelegate.swift in Sources */,
 				C47A92872965969800A0BDDF /* ContentView.swift in Sources */,
 				C47A92852965969800A0BDDF /* iOS_Getting_StartedApp.swift in Sources */,
+				C4D8ED782965A12B00762AC7 /* Backend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
