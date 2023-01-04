@@ -1,0 +1,14 @@
+{
+  "resourceName": "image",
+  "policyUUID": "1da48045",
+  "bucketName": "iosgettingstarted8beae1d53ca2410f8ff236d8e794a1",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

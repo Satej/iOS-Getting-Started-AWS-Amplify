@@ -18,6 +18,7 @@ class Backend {
       do {
         try Amplify.add(plugin: AWSCognitoAuthPlugin())
         try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
+        try Amplify.add(plugin: AWSS3StoragePlugin())
         try Amplify.configure()
           _ = Amplify.Hub.listen(to: .auth) { (payload) in
 
@@ -158,4 +159,47 @@ class Backend {
                }
            }
        }
+    
+    func storeImage(name: String, image: Data) {
+        let _ = Amplify.Storage.uploadData(key: name, data: image,// options: options,
+            progressListener: { progress in
+                // optionlly update a progress bar here
+            }, resultListener: { event in
+                switch event {
+                case .success(let data):
+                    print("Image upload completed: \(data)")
+                case .failure(let storageError):
+                    print("Image upload failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            }
+        })
+    }
+
+    func retrieveImage(name: String, completed: @escaping (Data) -> Void) {
+        let _ = Amplify.Storage.downloadData(key: name,
+            progressListener: { progress in
+                // in case you want to monitor progress
+            }, resultListener: { (event) in
+                switch event {
+                case let .success(data):
+                    print("Image \(name) loaded")
+                    completed(data)
+                case let .failure(storageError):
+                    print("Can not download image: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                }
+            }
+        )
+    }
+
+    func deleteImage(name: String) {
+        let _ = Amplify.Storage.remove(key: name,
+            resultListener: { (event) in
+                switch event {
+                case let .success(data):
+                    print("Image \(data) deleted")
+                case let .failure(storageError):
+                    print("Can not delete image: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                }
+            }
+        )
+    }
 }
